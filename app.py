@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, Response, url_for
 import csv
 import io
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder='assets')
 
 def calculate_amortization_schedule(principal, annual_rate, years, extra_emis, step_up_percent):
     """
