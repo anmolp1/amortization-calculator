@@ -1,0 +1,11 @@
+# Exported from Render on 2025-02-27T09:44:03Z
+services:
+- type: web
+  name: amortization-calculator
+  runtime: python
+  repo: https://github.com/anmolp1/amortization-calculator
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+version: "1"
