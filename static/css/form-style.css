@@ -1,0 +1,107 @@
+.title {
+  font-size: 10px;
+}
+
+.parent {
+  display: grid;
+  /* each column will be at least 200px wide, and expand to fill available space */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem 2.5rem;  /* space between fields */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  /*background: #e3e3e3;*/
+  background: linear-gradient(-45deg, #ecb6ed 0%, #b3e9ea 100% );
+  box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+  border-radius: 8px;
+  padding: 5rem;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1320px;
+}
+.login {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1b1818;
+}
+
+/* inputBox wrapper */
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+/* the actual <input> */
+.inputBox input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  background: transparent;
+  border: none;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-bottom-left-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+/* the floating label */
+.inputBox span {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.75rem;
+  padding: 0 0.25rem;
+  font-size: 0.85rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+/* move label up + shrink + invert colors on focus/valid */
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+  transform: translateY(-1.6rem) translateX(0.2rem);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  background: #000;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+/* on focus/valid, full border + rounded */
+.inputBox input:focus,
+.inputBox input:valid {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+/* submit button */
+.enter {
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+}
+.enter:hover {
+  background: #000;
+  color: #fff;
+}

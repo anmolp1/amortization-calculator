@@ -1,47 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Loan Amortization Calculator</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-4 text-center">Loan Amortization Calculator</h1>
-      <form method="post" class="row g-3">
-        <div class="col-md-6">
-          <label for="principal" class="form-label">Total Loan Amount:</label>
-          <input type="number" step="0.01" class="form-control" name="principal" id="principal" required>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amortization Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/form-style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="login">Amortization Calculator</h1>
+      <form method="POST" id="calcForm">
+        <div class="parent">
+          <div class="inputBox">
+            <input type="text" name="principal" id="principal" class="form-control" required>
+            <span>Total Loan Amount</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="annual_rate" id="annual_rate" class="form-control" required>
+            <span>Annual Interest Rate (%)</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="years" id="years" class="form-control" required>
+            <span>Loan Tenure (years)</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="extra_emis" id="extra_emis" class="form-control" required>
+            <span>Extra EMIs per Year</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" name="step_up_percent" id="step_up_percent" class="form-control" required>
+            <span>Step-up Percentage for EMI (%)</span>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="annual_rate" class="form-label">Annual Interest Rate (%):</label>
-          <input type="number" step="0.01" class="form-control" name="annual_rate" id="annual_rate" required>
-        </div>
-        <div class="col-md-6">
-          <label for="years" class="form-label">Loan Tenure (years):</label>
-          <input type="number" class="form-control" name="years" id="years" required>
-        </div>
-        <div class="col-md-6">
-          <label for="extra_emis" class="form-label">Extra EMIs per Year:</label>
-          <input type="number" class="form-control" name="extra_emis" id="extra_emis" required>
-        </div>
-        <div class="col-md-6">
-          <label for="step_up_percent" class="form-label">Step-up Percentage for EMI (%):</label>
-          <input type="number" step="0.01" class="form-control" name="step_up_percent" id="step_up_percent" required>
-        </div>
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-primary">Calculate Schedule</button>
-        </div>
+        <button type="submit" class="enter">Calculate Schedule</button>
       </form>
     </div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  </div>
+</body>
 </html>
