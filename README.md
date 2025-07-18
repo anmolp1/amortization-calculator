@@ -2,6 +2,7 @@
 
 A web application that calculates the amortization schedule for a loan, with support for extra EMI payments and annual EMI step-ups. This project displays a detailed monthly breakdown of payments, including regular and extra payments, interest, cumulative interest, principal, and remaining balance. Additionally, it compares the revised schedule against a baseline schedule (without extra payments or step-ups) to highlight the reduction in loan tenure and interest savings.
 
+
 ## Features
 
 - **Amortization Schedule Calculation:**  
@@ -27,10 +28,24 @@ A web application that calculates the amortization schedule for a loan, with sup
   - A summary alert highlighting key savings
   - A formatted table with comma-separated numbers and tenure displayed as years and months
 
+
 ## Prerequisites
 
 - Python 3.7 or higher
 - pip (Python package installer)
+
+
+## User Interface
+
+- Landing Page
+  ![Home](images/landing_page.png)
+
+- Inserting Values into the form
+  ![A sample image](images/input_values.png)
+
+- Calculating the revised schedule
+  ![A sample image](images/amortization_schedule.png)
+
 
 ## Installation
 
