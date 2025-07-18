@@ -1,8 +1,12 @@
-from flask import Flask, render_template, request, Response, url_for
+from flask import Flask, render_template, request, Response, url_for, send_from_directory
 import csv
 import io
 
 app = Flask(__name__)
+
+@app.route('/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory('images', filename)
 
 def calculate_amortization_schedule(principal, annual_rate, years, extra_emis, step_up_percent):
     """
