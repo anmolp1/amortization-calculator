@@ -1,12 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.hero {
+  background: linear-gradient(to right, #000000, #1f1f1f);
+  padding: 3rem 2rem;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.icon-container img {
+  width: 96px;
+  height: 96px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.hero-title {
+    font-family: "League Spartan", sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 32px;
+  color: #00e6e6;
+  margin-top: -0.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-points li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .title {
     font-size: 10px;
 }
 
 .parent {
     display: grid;
-    /* each column will be at least 200px wide, and expand to fill available space */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2.5rem 2.5rem;  /* space between fields */
+    gap: 2.5rem 5rem;
 }
 
 .container {
@@ -19,7 +87,7 @@
     background: linear-gradient(-45deg, #ecb6ed 0%, #b3e9ea 100% );
     box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
     border-radius: 8px;
-    padding: 5rem;
+    padding: 4rem;
     width: 100%;
     max-width: 700px;
     display: flex;
@@ -70,6 +138,7 @@
     font-size: 1rem;
     outline: none;
     transition: 0.2s;
+    font-family: "League Spartan", sans-serif;
 }
 /* the floating label */
 .inputBox span {

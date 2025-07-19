@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amortization Calculator</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/form-style.css') }}" />
 </head>
+
 <body>
   <div class="container">
     <div class="card">
-      <h1 class="login">Amortization Calculator</h1>
-        <div class="intro" style="display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center;">
-          <img src="{{ url_for('static', filename='images/gif/calculator.gif') }}" alt="Calculator" style="width:96px;height:96px;">
-          <div class="subtitle">
-            This tool shows you how your loan gets paid off over time. It also lets you:
-            <ul>
-                <li>Add extra payments to finish faster, and
-                <li>Increase your monthly payment every year if your income goes up.
+      <section class="hero">
+        <div class="hero-content">
+          <div class="icon-container">
+            <img src="{{ url_for('static', filename='images/gif/calculator.gif') }}" alt="Calculator Icon"
+              style="width:176px;height:176px;">
+          </div>
+          <div class="text-container">
+            <h1 class="hero-title">AMORTIZATION</h1>
+            <h2 class="hero-subtitle">CALCULATOR</h2>
+            <p class="hero-description">
+              This tool shows you how your loan gets paid off over time. It also lets you:
+            </p>
+            <ul class="hero-points">
+              <li>✅ Add extra payments to finish faster, and</li>
+              <li>✅ Increase your monthly payment every year if your income goes up.</li>
             </ul>
           </div>
         </div>
-        <hr style="color:rgb(17, 52, 178);size:5;width:75%;">
+      </section>
 
       <form method="POST" id="calcForm">
         <div class="parent">
@@ -50,4 +59,5 @@
     </div>
   </div>
 </body>
+
 </html>
