@@ -37,7 +37,7 @@
     font-size: 72px;
     font-weight: bold;
     margin: 0;
-    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    background: linear-gradient(-45deg, #5170ff 0%, #ff66c4 100% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -84,7 +84,7 @@
     min-height: 100vh;
 }
 .card {
-    background: linear-gradient(-45deg, #ecb6ed 0%, #b3e9ea 100% );
+    background: linear-gradient(-45deg, #5170ff 0%, #ff66c4 100% );
     box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
     border-radius: 8px;
     padding: 4rem;
@@ -106,7 +106,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #4f4f4f;
-    /* text-fill-color: transparent; */
 }
 
 .subtitle {
@@ -168,6 +167,7 @@
 .inputBox input:valid {
     border: 2px solid #000;
     border-radius: 8px;
+    background: #fff;
 }
 
 /* submit button */
@@ -185,5 +185,7 @@
 }
 .enter:hover {
     background: #000;
-    color: #fff;
+    color: rgb(0, 255, 187);
+    border-radius: 100px;
+    border-color: rgb(0, 255, 187);
 }

@@ -4,10 +4,6 @@ import io
 
 app = Flask(__name__)
 
-# @app.route('/images/<path:filename>')
-# def serve_image(filename):
-#     return send_from_directory('images', filename)
-
 def calculate_amortization_schedule(principal, annual_rate, years, extra_emis, step_up_percent):
     """
     Calculate the amortization schedule for a loan with extra EMI payments,
