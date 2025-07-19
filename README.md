@@ -38,13 +38,13 @@ A web application that calculates the amortization schedule for a loan, with sup
 ## User Interface
 
 - Landing Page
-  ![Home](images/landing_page.png)
+  ![Home](static/images/landing_page.png)
 
 - Inserting Values into the form
-  ![A sample image](images/input_values.png)
+  ![A sample image](static/images/input_values.png)
 
 - Calculating the revised schedule
-  ![A sample image](images/amortization_schedule.png)
+  ![A sample image](static/images/amortization_schedule.png)
 
 
 ## Installation
