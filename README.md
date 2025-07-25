@@ -52,5 +52,5 @@ A web application that calculates the amortization schedule for a loan, with sup
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/anmolp1/loan-amortization-calculator.git
+   git clone https://github.com/anmolp1/amortization-calculator.git
    cd loan-amortization-calculator
